@@ -1,4 +1,41 @@
-ion-content{
+.titulo-promocao
 
- --background: var{--ion-color-nova};
+{
+  font: 20px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ion-color-danger);
+}
+
+.acao
+
+{
+  font: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ion-color-danger);
+}
+.anima
+
+{
+  font: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ion-color-danger);
+}
+.terror
+
+{
+  font: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ion-color-danger);
+}
+.comedia
+
+{
+  font: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ion-color-danger);
 }
