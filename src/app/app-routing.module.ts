@@ -11,6 +11,11 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'acao',
+    loadChildren: () => import('./acao/acao.module').then( m => m.AcaoPageModule)
+  },
+
 ];
 
 @NgModule({
@@ -20,3 +25,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
