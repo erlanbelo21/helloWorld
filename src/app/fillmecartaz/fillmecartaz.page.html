@@ -2,9 +2,10 @@
   <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-button color="danger" routerLink="/home">Voltar
-     </ion-button>
+      </ion-button>
     </ion-buttons>
-    <ion-title color="danger" class="ion-text-center">Ação
+    <ion-title color="danger" class="ion-text-center">
+    Filmes em cartaz
     </ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="/carrinho" color="danger">
@@ -16,7 +17,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
   <ion-searchbar mode="ios" animated="true" placeholder="Buscar produto"></ion-searchbar>
 
   <ion-list>
@@ -33,10 +33,5 @@
         <ion-icon slot="icon-only" color="dark" name="cart-outline"></ion-icon>
       </ion-button>
     </ion-item>
-
-
-
-
   </ion-list>
-
 </ion-content>

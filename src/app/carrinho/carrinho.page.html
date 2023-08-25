@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+    <ion-button color="danger" routerLink="/home">Voltar
+  </ion-button>
+  </ion-buttons>
+  <ion-title color="danger" class="ion-text-center">
+ Carrinho</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let produto of listaProdutos; let i = index">
+      <ion-label color="dark">
+        <h2>{{ produto.nome }}</h2>
+        <p>Preço: R$ {{ produto.valor | number: '1.2-2' }}</p>
+        <ion-button color="danger" (click)="removerDoCarrinho(i)">Remover</ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-row>
+    <ion-col>
+      <ion-card color="danger">
+      <p>Total do Carrinho: R$ {{ totalCarrinho | number: '1.2-2' }}</p></ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
