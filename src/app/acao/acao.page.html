@@ -9,7 +9,7 @@
       Ação
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button routerLink="/carrinho">
+      <ion-button routerLink="/carrinho" color="danger">
         <ion-icon name="cart-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -27,10 +27,10 @@
       </ion-thumbnail>
       <ion-label>
         <h2>{{produto.nome}}</h2>
-        <p>{{produto.descricao}}</p>
+       
       </ion-label>
       <ion-badge color="dark">R$ {{produto.valor}}</ion-badge>
-      <ion-button slot="end" expand="block">
+      <ion-button slot="end" expand="block" color="danger">
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
     </ion-item>
