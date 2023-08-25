@@ -8,6 +8,11 @@
     <ion-title color="danger" class="ion-text-center">
       Ação
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/carrinho">
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -18,7 +23,7 @@
   <ion-list>
     <ion-item *ngFor="let produto of listaProdutos" lines="full">
       <ion-thumbnail slot="start">
-        <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h1a/hf8/h00/h00/10222598946846/1002001070173U-01-BASEIMAGE-Hires.jpg" />
+        <img src="{{produto.foto}}">
       </ion-thumbnail>
       <ion-label>
         <h2>{{produto.nome}}</h2>
