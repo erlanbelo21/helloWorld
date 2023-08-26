@@ -7,6 +7,7 @@ import { BdtempService } from '../services/bdtemp.service';
   styleUrls: ['./carrinho.page.scss'],
 })
 export class CarrinhoPage implements OnInit {
+  
 
   listaProdutos: any[] = [];
   totalCarrinho: number = 0; // Inicialize o total como zero
@@ -24,6 +25,7 @@ export class CarrinhoPage implements OnInit {
 
   ionViewWillEnter() {
     this.buscarItensCarrinho();
+    
   }
 
   removerDoCarrinho(posicao: number) {
