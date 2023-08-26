@@ -22,6 +22,18 @@
 
   <ion-row>
     <ion-col>
+      <style>
+        /* Estilizando o parágrafo */
+        p {
+          color: var(--ion-color-danger); /* Cor do texto do parágrafo */
+        }
+
+        /* Estilizando o ion-card (supondo que seja uma classe) */
+        .ion-card {
+          background-color: lightgray; /* Cor de fundo do ion-card */
+          padding: 10px; /* Espaçamento interno para melhor legibilidade */
+        }
+      </style>
       <ion-card color="dark">
       <p>Total do Carrinho: R$ {{ totalCarrinho | number: '1.2-2' }} </p></ion-card>
     </ion-col>
