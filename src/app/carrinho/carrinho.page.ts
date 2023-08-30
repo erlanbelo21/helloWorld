@@ -10,17 +10,17 @@ export class CarrinhoPage implements OnInit {
   
 
   listaProdutos: any[] = [];
-  totalCarrinho: number = 0; // Inicialize o total como zero
+  totalCarrinho: number = 0; 
 
   constructor(public bdtemp: BdtempService) { }
 
   ngOnInit() {
-    this.calcularTotalCarrinho(); // Inicialmente, calcule o total
+    this.calcularTotalCarrinho(); 
   }
 
   buscarItensCarrinho() {
     this.listaProdutos = this.bdtemp.buscar('carrinho');
-    this.calcularTotalCarrinho(); // Recalcula o total ao buscar os itens
+    this.calcularTotalCarrinho(); 
   }
 
   ionViewWillEnter() {
@@ -34,10 +34,18 @@ export class CarrinhoPage implements OnInit {
   }
 
   calcularTotalCarrinho() {
-    this.totalCarrinho = 0; // Zera o total antes de recalcular
+    this.totalCarrinho = 0; 
     for (let produto of this.listaProdutos) {
       this.totalCarrinho += produto.valor;
     }
+    
+
+  }
+
+  limparCarrinho(){
+    this.bdtemp.limparCarrinho();
+
+    this.buscarItensCarrinho();
 
   }
 }

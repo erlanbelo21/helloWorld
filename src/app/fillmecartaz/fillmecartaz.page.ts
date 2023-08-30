@@ -54,4 +54,6 @@ export class FillmecartazPage implements OnInit {
 
     this.qtdeItensCarrinho = this.bdtemp.buscar  ('qtdeItensCarrinho');
   }
+  
+  
 }
